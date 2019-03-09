@@ -1,0 +1,3 @@
+/home/wooyme/Projects/SocksDroid/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/rebuild_cache.dir
+/home/wooyme/Projects/SocksDroid/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/edit_cache.dir
+/home/wooyme/Projects/SocksDroid/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/system-lib.dir

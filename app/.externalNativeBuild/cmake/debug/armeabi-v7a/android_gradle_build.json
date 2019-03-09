@@ -1,0 +1,38 @@
+
+{
+	"buildFiles" : [ "/home/wooyme/Projects/SocksDroid/app/CMakeLists.txt" ],
+	"cleanCommands" : 
+	[
+		"/home/wooyme/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/wooyme/Projects/SocksDroid/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"system-lib-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "system-lib",
+			"buildCommand" : "/home/wooyme/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/wooyme/Projects/SocksDroid/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target system-lib",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/home/wooyme/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64 --sysroot=/home/wooyme/Android/Sdk/ndk-bundle/sysroot  -Dsystem_lib_EXPORTS -isystem /home/wooyme/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/wooyme/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/wooyme/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/wooyme/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=26 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11  -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/home/wooyme/Projects/SocksDroid/app/src/main/jni/system.cpp",
+					"workingDirectory" : "/home/wooyme/Projects/SocksDroid/app/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				}
+			],
+			"output" : "/home/wooyme/Projects/SocksDroid/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libsystem-lib.so",
+			"toolchain" : "16730550979321501466"
+		}
+	},
+	"toolchains" : 
+	{
+		"16730550979321501466" : 
+		{
+			"cCompilerExecutable" : "/home/wooyme/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/home/wooyme/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+		}
+	}
+}

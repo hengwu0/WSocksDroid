@@ -1,31 +1,54 @@
 apply plugin: 'com.android.application'
-apply plugin: 'groovyx.grooid.groovy-android'
+apply plugin: 'kotlin-android'
+apply plugin: "org.codehaus.groovy.android"
 
 android {
-	compileSdkVersion 23
-    buildToolsVersion "21.1.2"
+	compileSdkVersion 28
+    buildToolsVersion "28.0.3"
 
 	defaultConfig {
 		applicationId "net.typeblog.socks"
-		minSdkVersion 21
-		targetSdkVersion 22
+		minSdkVersion 26
+		targetSdkVersion 28
 		versionCode 10
 		versionName "1.0.1"
+        multiDexEnabled = true
 	}
 
 	sourceSets.main {
 		jni.srcDirs = []
 		jniLibs.srcDir 'libs'
 	}
-	
-	buildTypes {
+
+
+    buildTypes {
 		release {
 			
 		}
 	}
+	compileOptions {
+		sourceCompatibility JavaVersion.VERSION_1_8
+		targetCompatibility JavaVersion.VERSION_1_8
+	}
+    packagingOptions {
+        exclude "META-INF/io.netty.versions.properties"
+        exclude 'META-INF/INDEX.LIST'
+    }
+
 }
 
 dependencies {
 	compile fileTree(dir: 'libs', include: ['*.jar'])
-	compile 'org.codehaus.groovy:groovy:2.4.3:grooid'
+	compile 'org.codehaus.groovy:groovy:2.4.12:grooid'
+	compile 'io.vertx:vertx-core:3.6.0'
+    compile group: 'io.vertx', name: 'vertx-web', version: '3.6.0'
+    compile "io.vertx:vertx-lang-kotlin:3.6.0"
+    compile "io.vertx:vertx-lang-kotlin-coroutines:3.6.0"
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    compile "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.0.1"
+    compile "commons-codec:commons-codec:1.4"
+    compile "io.netty:netty-transport-native-epoll:4.1.33.Final"
+    compile group: 'io.netty', name: 'netty-transport-native-kqueue', version: '4.1.33.Final'
+//    compile group: 'io.netty', name: 'netty-all', version: '4.1.33.Final'
 }
+

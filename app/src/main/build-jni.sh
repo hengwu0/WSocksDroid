@@ -3,7 +3,7 @@
 rm -rf assets
 rm -rf ../../libs
 
-ndk-build
+/home/wooyme/Android/Sdk/ndk-bundle/ndk-build
 
 for p in armeabi-v7a arm64-v8a x86 mips; do
 	mkdir -p assets/$p

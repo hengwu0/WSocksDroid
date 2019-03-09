@@ -288,13 +288,9 @@ inline static char *stpcpy (char *dest, const char *src)
 #endif
 
 #ifndef HAVE_MEMPCPY
-inline static void *mempcpy(void *dest, const void *src, size_t len)
+void *mempcpy(void *dest, const void *src, size_t len)
   __attribute__((always_inline));
-inline static void *mempcpy(void *dest, const void *src, size_t len)
-{
-  memcpy(dest,src,len);
-  return ((char *)dest)+len;
-}
+
 #endif
 
 #ifndef HAVE_GETLINE

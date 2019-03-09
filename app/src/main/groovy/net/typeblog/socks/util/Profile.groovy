@@ -71,7 +71,7 @@ public class Profile {
 	}
 	
 	String getDns() {
-		mPref.getString(key("dns"), "8.8.8.8")
+		mPref.getString(key("dns"), "208.67.222.222")
 	}
 	
 	void setDns(String dns) {

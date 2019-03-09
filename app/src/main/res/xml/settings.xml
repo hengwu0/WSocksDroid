@@ -18,17 +18,17 @@
 			android:title="@string/server_port"
 			android:inputType="number"
 			android:singleLine="true"/>
-		
+
 		<CheckBoxPreference
 			android:key="ipv6_proxy"
 			android:title="@string/ipv6_proxy"
 			android:summary="@string/ipv6_proxy_sum"/>
-		
+
 		<CheckBoxPreference
 			android:key="udp_proxy"
 			android:title="@string/udp_proxy"
 			android:summary="@string/udp_proxy_sum"/>
-		
+
 		<EditTextPreference
 			android:key="udp_gw"
 			android:title="@string/udp_gw"
@@ -43,7 +43,7 @@
 		<CheckBoxPreference
 			android:key="auth_userpw"
 			android:title="@string/auth_userpw"
-			android:defaultValue="false"/>
+			android:defaultValue="true"/>
 		
 		<EditTextPreference
 			android:key="auth_username"

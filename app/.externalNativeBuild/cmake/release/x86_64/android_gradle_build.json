@@ -1,0 +1,38 @@
+
+{
+	"buildFiles" : [ "/home/wooyme/Projects/SocksDroid/app/CMakeLists.txt" ],
+	"cleanCommands" : 
+	[
+		"/home/wooyme/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/wooyme/Projects/SocksDroid/app/.externalNativeBuild/cmake/release/x86_64 --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"system-lib-Release-x86_64" : 
+		{
+			"abi" : "x86_64",
+			"artifactName" : "system-lib",
+			"buildCommand" : "/home/wooyme/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/wooyme/Projects/SocksDroid/app/.externalNativeBuild/cmake/release/x86_64 --target system-lib",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android --gcc-toolchain=/home/wooyme/Android/Sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/linux-x86_64 --sysroot=/home/wooyme/Android/Sdk/ndk-bundle/sysroot  -Dsystem_lib_EXPORTS -isystem /home/wooyme/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /home/wooyme/Android/Sdk/ndk-bundle/sources/android/support/include -isystem /home/wooyme/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /home/wooyme/Android/Sdk/ndk-bundle/sysroot/usr/include/x86_64-linux-android -D__ANDROID_API__=26 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11  -O2 -DNDEBUG  -fPIC    -c ",
+					"src" : "/home/wooyme/Projects/SocksDroid/app/src/main/jni/system.cpp",
+					"workingDirectory" : "/home/wooyme/Projects/SocksDroid/app/.externalNativeBuild/cmake/release/x86_64"
+				}
+			],
+			"output" : "/home/wooyme/Projects/SocksDroid/app/build/intermediates/cmake/release/obj/x86_64/libsystem-lib.so",
+			"toolchain" : "16730550979321501466"
+		}
+	},
+	"toolchains" : 
+	{
+		"16730550979321501466" : 
+		{
+			"cCompilerExecutable" : "/home/wooyme/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/home/wooyme/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+		}
+	}
+}

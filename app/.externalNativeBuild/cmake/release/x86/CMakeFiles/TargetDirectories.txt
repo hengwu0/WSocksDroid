@@ -1,0 +1,3 @@
+/home/wooyme/Projects/SocksDroid/app/.externalNativeBuild/cmake/release/x86/CMakeFiles/rebuild_cache.dir
+/home/wooyme/Projects/SocksDroid/app/.externalNativeBuild/cmake/release/x86/CMakeFiles/edit_cache.dir
+/home/wooyme/Projects/SocksDroid/app/.externalNativeBuild/cmake/release/x86/CMakeFiles/system-lib.dir
