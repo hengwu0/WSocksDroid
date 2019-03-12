@@ -1,38 +1,31 @@
-SocksDroid
+WSocksDroid
 ---
-SOCKS5 client for Android 5.0+ making use of the `VpnService` API and `tun2socks` so that it works without root permission (unlike ProxyDroid).
+WSocksDroid是基于SocksDroid和WSocks(Java)开发的安卓客户端。现已经实现WSocks桌面版的所有功能。如果出现任何问题，欢迎提交issue。
 
-Most of the JNI code are imported from `shadowsocks-android` project because they have already done most of the work.
+测试账户
+----
+为了测试App适配情况，现开放一台服务器作为测试主机。
 
-### THIS IS NOT A SHADOWSOCKS CLIENT! SOCKS5 IS NOT SHADOWSOCKS!
-
-UDP Forwarding
----
-As `tun2socks` does not support UDP associate but has its own implementation of UDP forwarding `badvpn-udpgw`, so it is needed that the udpgw daemon run on remote server to use UDP forwarding.
-
-On remote server
-
-```
-badvpn-udpgw --listen-addr 127.0.0.1:7300
-```
-
-And set `UDP Gateway` in this app to `127.0.0.1:7300`
+* Server IP: 154.85.14.132
+* Server Port: 1888
+* 勾选 Username & Password Authentication
+* Username: test
+* Password: thisistest
 
 DNS
 ---
-If the server does not run `udpgw`, DNS lookups can also be processed in this app.
+WSocksDroid依赖pdnsd和内置的TCP版DNS服务端(伪)。由于内置DNS的查询流程与正常DNS不同(包装成WSocks指令)，所以查询速度比较慢。往往会导致初次访问网站速度变慢，但因为pdnsd会做本地缓存，所以之后的访问速度会恢复正常。
 
-It makes use of the TCP DNS feature of `pdnsd`. You just set a DNS server that supports TCP DNS in this app, and all DNS requests will be transformed into TCP queries.
+**请确保DNS一栏中，DNS Server对应127.0.0.1，DNS PORT(TCP)对应5553。**
 
 Routing
 ---
-The app has an embedded list of non-Chinese IPs. Chinese users can make use of it for best experience in bypassing GFW.
+SocksDroid内置一个非大陆IP列表，用户可以使用这个列表选择性通过VPN，由于内置DNS，该功能可能无效。
 
-GFW
----
-Note that SOCKS5 is currently blocked by the GFW, which means Chinese users cannot connect to any SOCKS5 servers outside China.
+IPv6 & UDP Forwarding
+----
+由于WSocks本身并未支持这两项功能，所以请不要勾选IPv6和UDP Forwarding，以免出现未知的错误
 
-But there are still solutions. For example, use `stunnel` to wrap the SOCKS5 connection with SSL. See my project stunnel-android for usage on Android.
 
 License
 ---
