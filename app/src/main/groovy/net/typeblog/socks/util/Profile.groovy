@@ -71,7 +71,7 @@ public class Profile {
 	}
 	
 	String getDns() {
-		mPref.getString(key("dns"), "208.67.222.222")
+		mPref.getString(key("dns"), "127.0.0.1")
 	}
 	
 	void setDns(String dns) {
@@ -79,7 +79,7 @@ public class Profile {
 	}
 	
 	int getDnsPort() {
-		mPref.getInt(key("dns_port"), 53)
+		mPref.getInt(key("dns_port"), 5553)
 	}
 	
 	void setDnsPort(int port) {

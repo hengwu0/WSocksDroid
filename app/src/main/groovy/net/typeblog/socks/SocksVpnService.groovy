@@ -1,8 +1,13 @@
 package net.typeblog.socks
 
 import android.app.Notification
+import android.app.NotificationChannel
+import android.app.NotificationManager
+import android.content.Context
 import android.content.Intent
+import android.graphics.Color
 import android.net.VpnService
+import android.os.Build
 import android.os.IBinder
 import android.os.ParcelFileDescriptor
 import android.text.TextUtils
@@ -53,8 +58,17 @@ public class SocksVpnService extends VpnService {
         final String udpgw = intent.getStringExtra(INTENT_UDP_GW)
 
         // Create the notification
+        String channelId = ""
+        if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.O){
+            NotificationChannel chan = new NotificationChannel("wsocks_service","Wsocks Service", NotificationManager.IMPORTANCE_NONE)
+            chan.lightColor = Color.BLUE
+            chan.lockscreenVisibility = Notification.VISIBILITY_PRIVATE
+            NotificationManager service = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE)
+            service.createNotificationChannel(chan)
+            channelId = "wsocks_service"
+        }
         startForeground(R.drawable.ic_launcher,
-                new Notification.Builder(this).with {
+                new Notification.Builder(this,channelId).with {
                     contentTitle = getString(R.string.notify_title)
                     contentText = String.format(getString(R.string.notify_msg), name)
                     priority = Notification.PRIORITY_MIN
@@ -62,7 +76,7 @@ public class SocksVpnService extends VpnService {
                     build()
                 })
 
-        // Create an fd.
+        // Create an fd.981019
         configure(name, route, perApp, appBypass, appList, ipv6)
 
         if (DEBUG)
@@ -70,7 +84,7 @@ public class SocksVpnService extends VpnService {
 
         if (mInterface) {
             Launcher.start(server,port,username,passwd)
-            start(mInterface.getFd(), server, port, username, passwd, dns, dnsPort, ipv6, udpgw)
+            start(mInterface.getFd(), dns, dnsPort)
         }
         START_STICKY
     }
@@ -185,7 +199,7 @@ public class SocksVpnService extends VpnService {
         mInterface = b.establish()
     }
 
-    private void start(int fd, String server, int port, String user, String passwd, String dns, int dnsPort, boolean ipv6, String udpgw) {
+    private void start(int fd, String dns, int dnsPort) {
 
         // Start DNS daemon first
         Utility.makePdnsdConf(this, dns, dnsPort)

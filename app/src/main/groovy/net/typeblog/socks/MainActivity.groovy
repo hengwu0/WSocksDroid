@@ -2,8 +2,6 @@ package net.typeblog.socks
 
 import android.app.Activity
 import android.os.Bundle
-import me.wooy.proxy.client.ClientSocks5
-import me.wooy.proxy.client.Launcher
 import net.typeblog.socks.util.Utility
 
 public class MainActivity extends Activity {
@@ -11,7 +9,6 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState)
 		contentView = R.layout.main
 		Utility.extractFile(this)
-		
 		fragmentManager.beginTransaction().replace(R.id.frame, new ProfileFragment()).commit()
 	}
 }
