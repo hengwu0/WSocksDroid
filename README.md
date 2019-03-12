@@ -12,6 +12,8 @@ WSocksDroid是基于SocksDroid和WSocks(Java)开发的安卓客户端。现已�
 * Username: test
 * Password: thisistest
 
+> Apk地址：https://github.com/Wooyme/WSocksDroid/releases/tag/1.0.0
+
 DNS
 ---
 WSocksDroid依赖pdnsd和内置的TCP版DNS服务端(伪)。由于内置DNS的查询流程与正常DNS不同(包装成WSocks指令)，所以查询速度比较慢。往往会导致初次访问网站速度变慢，但因为pdnsd会做本地缓存，所以之后的访问速度会恢复正常。
