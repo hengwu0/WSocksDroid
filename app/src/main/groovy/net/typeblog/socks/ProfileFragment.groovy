@@ -62,9 +62,8 @@ public class ProfileFragment extends PreferenceFragment {
 	private IVpnService mBinder
 	
 	private ListPreference mPrefProfile, mPrefRoutes
-	private EditTextPreference mPrefServer, mPrefPort, mPrefUsername, mPrefPassword,mPrefKey,
-					mPrefDns, mPrefDnsPort, mPrefAppList, mPrefUDPGW
-	private CheckBoxPreference mPrefUserpw, mPrefPerApp, mPrefAppBypass, mPrefIPv6, mPrefUDP, mPrefAuto
+	private EditTextPreference mPrefServer, mPrefPort, mPrefUsername, mPrefPassword,mPrefKey,mPrefAppList
+	private CheckBoxPreference mPrefUserpw, mPrefPerApp, mPrefAppBypass, mPrefAuto
 	
 	@Override void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -136,17 +135,6 @@ public class ProfileFragment extends PreferenceFragment {
 				mProfile.route = newValue.toString()
 				resetListN(mPrefRoutes, newValue)
 				return true
-			case mPrefDns:
-				mProfile.dns = newValue.toString()
-				resetTextN(mPrefDns, newValue)
-				return true
-			case mPrefDnsPort:
-				if (TextUtils.isEmpty(newValue.toString()))
-					return false
-			
-				mProfile.dnsPort = newValue as int
-				resetTextN(mPrefDnsPort, newValue)
-				return true
 			case mPrefPerApp:
 				mProfile.perApp = newValue as boolean
 				return true
@@ -155,16 +143,6 @@ public class ProfileFragment extends PreferenceFragment {
 				return true
 			case mPrefAppList:
 				mProfile.appList = newValue.toString()
-				return true
-			case mPrefIPv6:
-				mProfile.hasIPv6 = newValue as boolean
-				return true
-			case mPrefUDP:
-				mProfile.hasUDP = newValue.toString()
-				return true
-			case mPrefUDPGW:
-				mProfile.UDPGW = newValue.toString()
-				resetTextN(mPrefUDPGW, newValue)
 				return true
 			case mPrefAuto:
 				mProfile.autoConnect = newValue as boolean
@@ -200,20 +178,14 @@ public class ProfileFragment extends PreferenceFragment {
 		mPrefPassword = (EditTextPreference) findPreference(PREF_AUTH_PASSWORD);
         mPrefKey = (EditTextPreference) findPreference(PREF_AUTH_KEY)
 		mPrefRoutes = (ListPreference) findPreference(PREF_ADV_ROUTE);
-		mPrefDns = (EditTextPreference) findPreference(PREF_ADV_DNS);
-		mPrefDnsPort = (EditTextPreference) findPreference(PREF_ADV_DNS_PORT);
 		mPrefPerApp = (CheckBoxPreference) findPreference(PREF_ADV_PER_APP);
 		mPrefAppBypass = (CheckBoxPreference) findPreference(PREF_ADV_APP_BYPASS);
 		mPrefAppList = (EditTextPreference) findPreference(PREF_ADV_APP_LIST);
-		mPrefIPv6 = (CheckBoxPreference) findPreference(PREF_IPV6_PROXY);
-		mPrefUDP = (CheckBoxPreference) findPreference(PREF_UDP_PROXY);
-		mPrefUDPGW = (EditTextPreference) findPreference(PREF_UDP_GW);
 		mPrefAuto = (CheckBoxPreference) findPreference(PREF_ADV_AUTO_CONNECT);
 		
 		[mPrefProfile, mPrefServer, mPrefPort, mPrefUserpw,
-		mPrefUsername, mPrefPassword,mPrefKey, mPrefRoutes, mPrefDns,
-		mPrefDnsPort, mPrefPerApp, mPrefAppBypass, mPrefAppList,
-		mPrefIPv6, mPrefUDP, mPrefUDPGW,
+		mPrefUsername, mPrefPassword,mPrefKey, mPrefRoutes,
+		mPrefPerApp, mPrefAppBypass, mPrefAppList,
 		mPrefAuto]*.onPreferenceChangeListener = [
 			onPreferenceClick: { false },
 			onPreferenceChange: this.&prefChange
@@ -234,8 +206,6 @@ public class ProfileFragment extends PreferenceFragment {
 		mPrefUserpw.checked = mProfile.userPw
 		mPrefPerApp.checked = mProfile.perApp
 		mPrefAppBypass.checked = mProfile.bypassApp
-		mPrefIPv6.checked = mProfile.hasIPv6
-		mPrefUDP.checked = mProfile.hasUDP
 		mPrefAuto.checked = mProfile.autoConnect
 		
 		mPrefServer.text = mProfile.server
@@ -243,10 +213,7 @@ public class ProfileFragment extends PreferenceFragment {
 		mPrefUsername.text = mProfile.username
 		mPrefPassword.text = mProfile.password
         mPrefKey.text = mProfile.key
-		mPrefDns.text = mProfile.dns
-		mPrefDnsPort.text = mProfile.dnsPort as String
-		mPrefUDPGW.text = mProfile.UDPGW
-		resetText(mPrefServer, mPrefPort, mPrefUsername,mPrefKey, mPrefPassword, mPrefDns, mPrefDnsPort, mPrefUDPGW);
+		resetText(mPrefServer, mPrefPort, mPrefUsername,mPrefKey, mPrefPassword)
 		
 		mPrefAppList.text = mProfile.appList
 	}

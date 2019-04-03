@@ -81,19 +81,11 @@ public class Profile {
 	String getDns() {
 		mPref.getString(key("dns"), "127.0.0.1")
 	}
-	
-	void setDns(String dns) {
-		mPref.edit().putString(key("dns"), dns).commit()
-	}
-	
+
 	int getDnsPort() {
 		mPref.getInt(key("dns_port"), 5553)
 	}
-	
-	void setDnsPort(int port) {
-		mPref.edit().putInt(key("dns_port"), port).commit()
-	}
-	
+
 	boolean getPerApp() {
 		mPref.getBoolean(key("perapp"), false)
 	}
