@@ -20,7 +20,7 @@ public class Launcher {
         vertx = Vertx.vertx(options);
     }
 
-    public static String start(String server, int port, String user, String pass) {
+    public static String start(String server, int port, String user, String pass,String key) {
         if(vertx==null){
             init();
         }
@@ -29,7 +29,7 @@ public class Launcher {
                         .put("remote.port", port)
                         .put("user", user)
                         .put("pass", pass)
-                        .put("key", "cnmgfwnmsl")), it -> {
+                        .put("key", key)), it -> {
                             if (it.succeeded()) {
                                 ID = it.result();
                                 Log.i("ClientSocks5", it.result());

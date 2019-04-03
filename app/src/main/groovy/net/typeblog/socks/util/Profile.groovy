@@ -39,7 +39,7 @@ public class Profile {
 	}
 	
 	boolean getUserPw() {
-		mPref.getBoolean(key("userpw"), false)
+		mPref.getBoolean(key("userpw"), true)
 	}
 	
 	void setUserPw(boolean is) {
@@ -48,6 +48,14 @@ public class Profile {
 	
 	String getUsername() {
 		mPref.getString(key("username"), "")
+	}
+
+	String getKey(){
+		mPref.getString(key("key"),"cnmgfwnmsl")
+	}
+
+	void setKey(String _key){
+		mPref.edit().putString(key("key"),_key).commit()
 	}
 	
 	void setUsername(String username) {
@@ -149,6 +157,7 @@ public class Profile {
 			remove key("userpw")
 			remove key("username")
 			remove key("password")
+            remove key("key")
 			remove key("route")
 			remove key("dns")
 			remove key("dns_port")

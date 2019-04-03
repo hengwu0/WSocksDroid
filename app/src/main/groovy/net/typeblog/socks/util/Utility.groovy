@@ -153,6 +153,7 @@ public class Utility {
 			if (profile.userPw) {
 				putExtra INTENT_USERNAME, profile.username
 				putExtra INTENT_PASSWORD, profile.password
+				putExtra INTENT_KEY, profile.key
 			}
 
 			if (profile.perApp) {

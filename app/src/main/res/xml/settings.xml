@@ -57,6 +57,12 @@
 			android:inputType="textPassword"
 			android:dependency="auth_userpw"
 			android:singleLine="true"/>
+
+		<EditTextPreference
+			android:key="auth_key"
+			android:title="Key"
+			android:dependency="auth_userpw"
+			android:singleLine="true"/>
 		
 	</PreferenceCategory>
 	

@@ -62,7 +62,7 @@ public class ProfileFragment extends PreferenceFragment {
 	private IVpnService mBinder
 	
 	private ListPreference mPrefProfile, mPrefRoutes
-	private EditTextPreference mPrefServer, mPrefPort, mPrefUsername, mPrefPassword,
+	private EditTextPreference mPrefServer, mPrefPort, mPrefUsername, mPrefPassword,mPrefKey,
 					mPrefDns, mPrefDnsPort, mPrefAppList, mPrefUDPGW
 	private CheckBoxPreference mPrefUserpw, mPrefPerApp, mPrefAppBypass, mPrefIPv6, mPrefUDP, mPrefAuto
 	
@@ -83,7 +83,7 @@ public class ProfileFragment extends PreferenceFragment {
 		mSwitch = (Switch) s.getActionView().findViewById(R.id.switch_action_button)
 
 		mSwitch.postDelayed(mStateRunnable, 1000)
-		checkState();
+		checkState()
 	}
 
 	@Override boolean onOptionsItemSelected(MenuItem item) {
@@ -114,7 +114,6 @@ public class ProfileFragment extends PreferenceFragment {
 			case mPrefPort:
 				if (TextUtils.isEmpty(newValue.toString()))
 					return false
-			
 				mProfile.port = newValue as int
 				resetTextN(mPrefPort, newValue)
 				return true
@@ -128,6 +127,10 @@ public class ProfileFragment extends PreferenceFragment {
 			case mPrefPassword:
 				mProfile.password = newValue.toString()
 				resetTextN(mPrefPassword, newValue)
+				return true
+			case mPrefKey:
+				mProfile.key = newValue.toString()
+				resetTextN(mPrefKey,newValue)
 				return true
 			case mPrefRoutes:
 				mProfile.route = newValue.toString()
@@ -195,6 +198,7 @@ public class ProfileFragment extends PreferenceFragment {
 		mPrefUserpw = (CheckBoxPreference) findPreference(PREF_AUTH_USERPW);
 		mPrefUsername = (EditTextPreference) findPreference(PREF_AUTH_USERNAME);
 		mPrefPassword = (EditTextPreference) findPreference(PREF_AUTH_PASSWORD);
+        mPrefKey = (EditTextPreference) findPreference(PREF_AUTH_KEY)
 		mPrefRoutes = (ListPreference) findPreference(PREF_ADV_ROUTE);
 		mPrefDns = (EditTextPreference) findPreference(PREF_ADV_DNS);
 		mPrefDnsPort = (EditTextPreference) findPreference(PREF_ADV_DNS_PORT);
@@ -207,7 +211,7 @@ public class ProfileFragment extends PreferenceFragment {
 		mPrefAuto = (CheckBoxPreference) findPreference(PREF_ADV_AUTO_CONNECT);
 		
 		[mPrefProfile, mPrefServer, mPrefPort, mPrefUserpw,
-		mPrefUsername, mPrefPassword, mPrefRoutes, mPrefDns,
+		mPrefUsername, mPrefPassword,mPrefKey, mPrefRoutes, mPrefDns,
 		mPrefDnsPort, mPrefPerApp, mPrefAppBypass, mPrefAppList,
 		mPrefIPv6, mPrefUDP, mPrefUDPGW,
 		mPrefAuto]*.onPreferenceChangeListener = [
@@ -238,10 +242,11 @@ public class ProfileFragment extends PreferenceFragment {
 		mPrefPort.text = mProfile.port as String
 		mPrefUsername.text = mProfile.username
 		mPrefPassword.text = mProfile.password
+        mPrefKey.text = mProfile.key
 		mPrefDns.text = mProfile.dns
 		mPrefDnsPort.text = mProfile.dnsPort as String
 		mPrefUDPGW.text = mProfile.UDPGW
-		resetText(mPrefServer, mPrefPort, mPrefUsername, mPrefPassword, mPrefDns, mPrefDnsPort, mPrefUDPGW);
+		resetText(mPrefServer, mPrefPort, mPrefUsername,mPrefKey, mPrefPassword, mPrefDns, mPrefDnsPort, mPrefUDPGW);
 		
 		mPrefAppList.text = mProfile.appList
 	}

@@ -43,24 +43,25 @@ public class SocksVpnService extends VpnService {
             return 0
         }
 
-        final String name = intent.getStringExtra(INTENT_NAME);
-        final String server = intent.getStringExtra(INTENT_SERVER);
-        final int port = intent.getIntExtra(INTENT_PORT, 1080);
-        final String username = intent.getStringExtra(INTENT_USERNAME);
-        final String passwd = intent.getStringExtra(INTENT_PASSWORD);
-        final String route = intent.getStringExtra(INTENT_ROUTE);
-        final String dns = intent.getStringExtra(INTENT_DNS);
-        final int dnsPort = intent.getIntExtra(INTENT_DNS_PORT, 53);
-        final boolean perApp = intent.getBooleanExtra(INTENT_PER_APP, false);
-        final boolean appBypass = intent.getBooleanExtra(INTENT_APP_BYPASS, false);
-        final String[] appList = intent.getStringArrayExtra(INTENT_APP_LIST);
+        final String name = intent.getStringExtra(INTENT_NAME)
+        final String server = intent.getStringExtra(INTENT_SERVER)
+        final int port = intent.getIntExtra(INTENT_PORT, 1080)
+        final String username = intent.getStringExtra(INTENT_USERNAME)
+        final String passwd = intent.getStringExtra(INTENT_PASSWORD)
+        final String key = intent.getStringExtra(INTENT_KEY)
+        final String route = intent.getStringExtra(INTENT_ROUTE)
+        final String dns = intent.getStringExtra(INTENT_DNS)
+        final int dnsPort = intent.getIntExtra(INTENT_DNS_PORT, 53)
+        final boolean perApp = intent.getBooleanExtra(INTENT_PER_APP, false)
+        final boolean appBypass = intent.getBooleanExtra(INTENT_APP_BYPASS, false)
+        final String[] appList = intent.getStringArrayExtra(INTENT_APP_LIST)
         final boolean ipv6 = false
         final String udpgw = intent.getStringExtra(INTENT_UDP_GW)
 
         // Create the notification
         String channelId = ""
-        if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.O){
-            NotificationChannel chan = new NotificationChannel("wsocks_service","Wsocks Service", NotificationManager.IMPORTANCE_NONE)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            NotificationChannel chan = new NotificationChannel("wsocks_service", "Wsocks Service", NotificationManager.IMPORTANCE_NONE)
             chan.lightColor = Color.BLUE
             chan.lockscreenVisibility = Notification.VISIBILITY_PRIVATE
             NotificationManager service = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE)
@@ -68,7 +69,7 @@ public class SocksVpnService extends VpnService {
             channelId = "wsocks_service"
         }
         startForeground(R.drawable.ic_launcher,
-                new Notification.Builder(this,channelId).with {
+                new Notification.Builder(this, channelId).with {
                     contentTitle = getString(R.string.notify_title)
                     contentText = String.format(getString(R.string.notify_msg), name)
                     priority = Notification.PRIORITY_MIN
@@ -83,7 +84,7 @@ public class SocksVpnService extends VpnService {
             Log.d(TAG, "fd: ${mInterface.fd}")
 
         if (mInterface) {
-            Launcher.start(server,port,username,passwd)
+            Launcher.start(server, port, username, passwd,key)
             start(mInterface.getFd(), dns, dnsPort)
         }
         START_STICKY
