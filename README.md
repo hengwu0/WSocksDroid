@@ -4,6 +4,8 @@ WSocksDroid是基于SocksDroid和WSocks(Java)开发的安卓客户端。现已�
 
 **只支持Android 8.0以上系统**
 
+<img src="https://github.com/Wooyme/WSocksDroid/blob/master/Screenshot_20190403-184454.jpg?raw=true">
+
 测试账户
 ----
 为了测试App适配情况，现开放一台服务器作为测试主机。
