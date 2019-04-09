@@ -38,26 +38,10 @@ public class Profile {
 		mPref.edit().putInt(key("port"), port).commit()
 	}
 	
-	boolean getUserPw() {
-		mPref.getBoolean(key("userpw"), true)
-	}
-	
-	void setUserPw(boolean is) {
-		mPref.edit().putBoolean(key("userpw"), is).commit()
-	}
-	
 	String getUsername() {
 		mPref.getString(key("username"), "")
 	}
 
-	String getKey(){
-		mPref.getString(key("key"),"cnmgfwnmsl")
-	}
-
-	void setKey(String _key){
-		mPref.edit().putString(key("key"),_key).commit()
-	}
-	
 	void setUsername(String username) {
 		mPref.edit().putString(key("username"), username).commit()
 	}
@@ -69,10 +53,26 @@ public class Profile {
 	void setPassword(String password) {
 		mPref.edit().putString(key("password"), password).commit()
 	}
+
+	boolean getDoZip(){
+		mPref.getBoolean(key("zip"),false)
+	}
+
+	void setDoZip(boolean doZip){
+		mPref.edit().putBoolean(key("zip"),doZip).commit()
+	}
 	
 	String getRoute() {
 		mPref.getString(key("route"), ROUTE_ALL)
 	}
+
+    int getOffset(){
+        mPref.getInt(key("offset"),0)
+    }
+
+    void setOffset(int offset){
+        mPref.edit().putInt(key("offset"),offset).commit()
+    }
 	
 	void setRoute(String route) {
 		mPref.edit().putString(key("route"), route).commit()
@@ -109,31 +109,7 @@ public class Profile {
 	void setAppList(String list) {
 		mPref.edit().putString(key("applist"), list).commit()
 	}
-	
-	boolean getHasIPv6() {
-		mPref.getBoolean(key("ipv6"), false)
-	}
-	
-	void setHasIPv6(boolean has) {
-		mPref.edit().putBoolean(key("ipv6"), has).commit()
-	}
-	
-	boolean getHasUDP() {
-		mPref.getBoolean(key("udp"), false)
-	}
-	
-	void setHasUDP(boolean has) {
-		mPref.edit().putBoolean(key("udp"), has).commit()
-	}
-	
-	String getUDPGW() {
-		mPref.getString(key("udpgw"), "127.0.0.1:7300")
-	}
-	
-	void setUDPGW(String gw) {
-		mPref.edit().putString(key("udpgw"), gw).commit()
-	}
-	
+
 	boolean getAutoConnect() {
 		mPref.getBoolean(key("auto"), false)
 	}
@@ -149,7 +125,6 @@ public class Profile {
 			remove key("userpw")
 			remove key("username")
 			remove key("password")
-            remove key("key")
 			remove key("route")
 			remove key("dns")
 			remove key("dns_port")

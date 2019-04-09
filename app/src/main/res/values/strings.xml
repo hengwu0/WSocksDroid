@@ -9,6 +9,8 @@
 	<string name="connection">连接</string>
 	<string name="server_ip">IP地址</string>
 	<string name="server_port">端口号</string>
+	<string name="server_zip">使用Gzip压缩</string>
+	<string name="server_offset">偏移量</string>
 
 	<string name="authentication">认证</string>
 	<string name="auth_userpw">用户名密码认证</string>

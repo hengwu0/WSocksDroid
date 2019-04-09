@@ -12,10 +12,7 @@ import android.os.IBinder
 import android.os.ParcelFileDescriptor
 import android.text.TextUtils
 import android.util.Log
-import me.wooy.proxy.client.Launcher
-import net.typeblog.socks.IVpnService
-import net.typeblog.socks.R
-import net.typeblog.socks.System
+import me.wooy.proxy.Launcher
 import net.typeblog.socks.util.Routes
 import net.typeblog.socks.util.Utility
 
@@ -48,7 +45,8 @@ public class SocksVpnService extends VpnService {
         final int port = intent.getIntExtra(INTENT_PORT, 1080)
         final String username = intent.getStringExtra(INTENT_USERNAME)
         final String passwd = intent.getStringExtra(INTENT_PASSWORD)
-        final String key = intent.getStringExtra(INTENT_KEY)
+        final boolean doZip = intent.getBooleanExtra(INTENT_DOZIP,false)
+        final int offset = intent.getIntExtra(INTENT_OFFSET,0)
         final String route = intent.getStringExtra(INTENT_ROUTE)
         final String dns = intent.getStringExtra(INTENT_DNS)
         final int dnsPort = intent.getIntExtra(INTENT_DNS_PORT, 53)
@@ -56,7 +54,6 @@ public class SocksVpnService extends VpnService {
         final boolean appBypass = intent.getBooleanExtra(INTENT_APP_BYPASS, false)
         final String[] appList = intent.getStringArrayExtra(INTENT_APP_LIST)
         final boolean ipv6 = false
-        final String udpgw = intent.getStringExtra(INTENT_UDP_GW)
 
         // Create the notification
         String channelId = ""
@@ -84,7 +81,7 @@ public class SocksVpnService extends VpnService {
             Log.d(TAG, "fd: ${mInterface.fd}")
 
         if (mInterface) {
-            Launcher.start(server, port, username, passwd,key)
+            Launcher.start(server, port, username, passwd,offset,doZip)
             start(mInterface.getFd(), dns, dnsPort)
         }
         START_STICKY

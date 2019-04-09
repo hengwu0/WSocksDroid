@@ -62,8 +62,8 @@ public class ProfileFragment extends PreferenceFragment {
 	private IVpnService mBinder
 	
 	private ListPreference mPrefProfile, mPrefRoutes
-	private EditTextPreference mPrefServer, mPrefPort, mPrefUsername, mPrefPassword,mPrefKey,mPrefAppList
-	private CheckBoxPreference mPrefUserpw, mPrefPerApp, mPrefAppBypass, mPrefAuto
+	private EditTextPreference mPrefServer, mPrefPort, mPrefUsername, mPrefPassword,mPrefAppList,mPrefOffset
+	private CheckBoxPreference mPrefPerApp, mPrefAppBypass, mPrefAuto,mPrefDoZip
 	
 	@Override void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -116,9 +116,6 @@ public class ProfileFragment extends PreferenceFragment {
 				mProfile.port = newValue as int
 				resetTextN(mPrefPort, newValue)
 				return true
-			case mPrefUserpw:
-				mProfile.userPw = newValue as boolean
-				return true
 			case mPrefUsername:
 				mProfile.username = newValue.toString()
 				resetTextN(mPrefUsername, newValue)
@@ -126,10 +123,6 @@ public class ProfileFragment extends PreferenceFragment {
 			case mPrefPassword:
 				mProfile.password = newValue.toString()
 				resetTextN(mPrefPassword, newValue)
-				return true
-			case mPrefKey:
-				mProfile.key = newValue.toString()
-				resetTextN(mPrefKey,newValue)
 				return true
 			case mPrefRoutes:
 				mProfile.route = newValue.toString()
@@ -147,6 +140,14 @@ public class ProfileFragment extends PreferenceFragment {
 			case mPrefAuto:
 				mProfile.autoConnect = newValue as boolean
 				return true
+			case mPrefDoZip:
+				mProfile.doZip = newValue as boolean
+				return true
+			case mPrefOffset:
+				if (TextUtils.isEmpty(newValue.toString()))
+					return false
+				mProfile.offset = newValue as int
+				return true
 			default:
 				return false
 		}
@@ -154,9 +155,9 @@ public class ProfileFragment extends PreferenceFragment {
 
 	def checkedChanged(CompoundButton p1, boolean checked) {
 		if (checked) {
-			startVpn();
+			startVpn()
 		} else {
-			stopVpn();
+			stopVpn()
 		}
 	}
 
@@ -171,20 +172,19 @@ public class ProfileFragment extends PreferenceFragment {
 	
 	private void initPreferences() {
 		mPrefProfile = (ListPreference) findPreference(PREF_PROFILE);
-		mPrefServer = (EditTextPreference) findPreference(PREF_SERVER_IP);
-		mPrefPort = (EditTextPreference) findPreference(PREF_SERVER_PORT);
-		mPrefUserpw = (CheckBoxPreference) findPreference(PREF_AUTH_USERPW);
-		mPrefUsername = (EditTextPreference) findPreference(PREF_AUTH_USERNAME);
-		mPrefPassword = (EditTextPreference) findPreference(PREF_AUTH_PASSWORD);
-        mPrefKey = (EditTextPreference) findPreference(PREF_AUTH_KEY)
-		mPrefRoutes = (ListPreference) findPreference(PREF_ADV_ROUTE);
-		mPrefPerApp = (CheckBoxPreference) findPreference(PREF_ADV_PER_APP);
-		mPrefAppBypass = (CheckBoxPreference) findPreference(PREF_ADV_APP_BYPASS);
-		mPrefAppList = (EditTextPreference) findPreference(PREF_ADV_APP_LIST);
-		mPrefAuto = (CheckBoxPreference) findPreference(PREF_ADV_AUTO_CONNECT);
-		
-		[mPrefProfile, mPrefServer, mPrefPort, mPrefUserpw,
-		mPrefUsername, mPrefPassword,mPrefKey, mPrefRoutes,
+		mPrefServer = (EditTextPreference) findPreference(PREF_SERVER_IP)
+		mPrefPort = (EditTextPreference) findPreference(PREF_SERVER_PORT)
+		mPrefUsername = (EditTextPreference) findPreference(PREF_AUTH_USERNAME)
+		mPrefPassword = (EditTextPreference) findPreference(PREF_AUTH_PASSWORD)
+        mPrefOffset = (EditTextPreference) findPreference(PREF_SERVER_OFFSET)
+        mPrefRoutes = (ListPreference) findPreference(PREF_ADV_ROUTE)
+		mPrefPerApp = (CheckBoxPreference) findPreference(PREF_ADV_PER_APP)
+		mPrefAppBypass = (CheckBoxPreference) findPreference(PREF_ADV_APP_BYPASS)
+		mPrefAppList = (EditTextPreference) findPreference(PREF_ADV_APP_LIST)
+		mPrefAuto = (CheckBoxPreference) findPreference(PREF_ADV_AUTO_CONNECT)
+		mPrefDoZip = (CheckBoxPreference) findPreference(PREF_SERVER_ZIP)
+		[mPrefProfile, mPrefServer, mPrefPort,mPrefDoZip,mPrefOffset,
+		mPrefUsername, mPrefPassword, mPrefRoutes,
 		mPrefPerApp, mPrefAppBypass, mPrefAppList,
 		mPrefAuto]*.onPreferenceChangeListener = [
 			onPreferenceClick: { false },
@@ -203,17 +203,17 @@ public class ProfileFragment extends PreferenceFragment {
 		mPrefRoutes.value = mProfile.route
 		resetList(mPrefProfile, mPrefRoutes)
 		
-		mPrefUserpw.checked = mProfile.userPw
 		mPrefPerApp.checked = mProfile.perApp
 		mPrefAppBypass.checked = mProfile.bypassApp
 		mPrefAuto.checked = mProfile.autoConnect
 		
 		mPrefServer.text = mProfile.server
 		mPrefPort.text = mProfile.port as String
+        mPrefOffset.text = mProfile.offset as String
+        mPrefDoZip.checked = mProfile.doZip
 		mPrefUsername.text = mProfile.username
 		mPrefPassword.text = mProfile.password
-        mPrefKey.text = mProfile.key
-		resetText(mPrefServer, mPrefPort, mPrefUsername,mPrefKey, mPrefPassword)
+		resetText(mPrefServer, mPrefPort, mPrefOffset,mPrefUsername, mPrefPassword)
 		
 		mPrefAppList.text = mProfile.appList
 	}

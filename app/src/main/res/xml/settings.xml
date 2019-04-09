@@ -18,36 +18,32 @@
 			android:title="@string/server_port"
 			android:inputType="number"
 			android:singleLine="true"/>
+
+		<CheckBoxPreference android:key="server_zip"
+			android:title="@string/server_zip"/>
+
+        <EditTextPreference android:key="server_offset"
+            android:title="@string/server_offset"
+            android:inputType="number"
+            android:singleLine="true"/>
 	</PreferenceCategory>
 	
 	<PreferenceCategory
 		android:title="@string/authentication">
-		
-		<CheckBoxPreference
-			android:key="auth_userpw"
-			android:title="@string/auth_userpw"
-			android:defaultValue="true"/>
-		
+
 		<EditTextPreference
 			android:key="auth_username"
 			android:title="@string/auth_username"
-			android:dependency="auth_userpw"
 			android:singleLine="true"/>
 		
 		<EditTextPreference
 			android:key="auth_password"
 			android:title="@string/auth_password"
 			android:inputType="textPassword"
-			android:dependency="auth_userpw"
 			android:singleLine="true"/>
 
-		<EditTextPreference
-			android:key="auth_key"
-			android:title="Key"
-			android:dependency="auth_userpw"
-			android:singleLine="true"/>
-		
 	</PreferenceCategory>
+
 	
 	<PreferenceCategory
 		android:title="@string/advanced">

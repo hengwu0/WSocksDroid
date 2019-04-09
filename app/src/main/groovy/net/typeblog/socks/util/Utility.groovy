@@ -148,21 +148,15 @@ public class Utility {
 			putExtra INTENT_DNS, profile.dns
 			putExtra INTENT_DNS_PORT, profile.dnsPort
 			putExtra INTENT_PER_APP, profile.perApp
-			putExtra INTENT_IPV6_PROXY, profile.hasIPv6
-		
-			if (profile.userPw) {
-				putExtra INTENT_USERNAME, profile.username
-				putExtra INTENT_PASSWORD, profile.password
-				putExtra INTENT_KEY, profile.key
-			}
+
+			putExtra INTENT_USERNAME, profile.username
+			putExtra INTENT_PASSWORD, profile.password
+			putExtra INTENT_OFFSET, profile.offset
+			putExtra INTENT_DOZIP, profile.doZip
 
 			if (profile.perApp) {
 				putExtra INTENT_APP_BYPASS, profile.bypassApp
 				putExtra INTENT_APP_LIST, profile.appList.split("\n")
-			}
-
-			if (profile.hasUDP) {
-				putExtra INTENT_UDP_GW, profile.UDPGW
 			}
 		}
 		

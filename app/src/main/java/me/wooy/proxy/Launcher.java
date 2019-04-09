@@ -1,4 +1,4 @@
-package me.wooy.proxy.client;
+package me.wooy.proxy;
 
 import android.util.Log;
 
@@ -8,6 +8,7 @@ import io.vertx.core.Handler;
 import io.vertx.core.Vertx;
 import io.vertx.core.VertxOptions;
 import io.vertx.core.json.JsonObject;
+import me.wooy.proxy.client.ClientWebSocket;
 
 public class Launcher {
     private static Vertx vertx;
@@ -20,21 +21,23 @@ public class Launcher {
         vertx = Vertx.vertx(options);
     }
 
-    public static String start(String server, int port, String user, String pass,String key) {
+    public static String start(String server, int port, String user, String pass,int offset,boolean doZip) {
+        Log.i("ClientWebSocket", "Start");
         if(vertx==null){
             init();
         }
-        vertx.deployVerticle(new ClientSocks5(), new DeploymentOptions().setConfig(
+        vertx.deployVerticle(new ClientWebSocket(), new DeploymentOptions().setConfig(
                 new JsonObject().put("remote.ip", server)
                         .put("remote.port", port)
                         .put("user", user)
                         .put("pass", pass)
-                        .put("key", key)), it -> {
+                        .put("offset",offset)
+                        .put("zip",doZip)), it -> {
                             if (it.succeeded()) {
                                 ID = it.result();
-                                Log.i("ClientSocks5", it.result());
+                                Log.i("ClientWebSocket", it.result());
                             } else {
-                                Log.e("ClientSocks5", it.cause().getLocalizedMessage());
+                                Log.e("ClientWebSocket", it.cause().getLocalizedMessage());
                             }
                         });
         return ID;
