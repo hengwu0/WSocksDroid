@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/home/wooyme/Projects/SocksDroid/app/build/intermediates/res/merged/debug/layout_main.xml.flat",
+        "source": "/home/wooyme/Projects/SocksDroid/app/src/main/res/layout/main.xml"
+    },
+    {
+        "merged": "/home/wooyme/Projects/SocksDroid/app/build/intermediates/res/merged/debug/layout_action_switch.xml.flat",
+        "source": "/home/wooyme/Projects/SocksDroid/app/src/main/res/layout/action_switch.xml"
+    },
+    {
+        "merged": "/home/wooyme/Projects/SocksDroid/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_launcher.png.flat",
+        "source": "/home/wooyme/Projects/SocksDroid/app/src/main/res/drawable-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/wooyme/Projects/SocksDroid/app/build/intermediates/res/merged/debug/menu_main.xml.flat",
+        "source": "/home/wooyme/Projects/SocksDroid/app/src/main/res/menu/main.xml"
+    },
+    {
+        "merged": "/home/wooyme/Projects/SocksDroid/app/build/intermediates/res/merged/debug/xml_settings.xml.flat",
+        "source": "/home/wooyme/Projects/SocksDroid/app/src/main/res/xml/settings.xml"
+    }
+]
