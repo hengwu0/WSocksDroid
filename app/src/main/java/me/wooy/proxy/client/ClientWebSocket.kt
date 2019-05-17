@@ -60,9 +60,9 @@ class ClientWebSocket : AbstractVerticle() {
             return
         httpClient.websocket(remotePort
                 , remoteIp
-                , "/proxy"
+                , "/"+RandomStringUtils.randomAlphabetic(5)
                 , MultiMap.caseInsensitiveMultiMap()
-                .add(RandomStringUtils.randomAlphanumeric(Random().nextInt(10))
+                .add(RandomStringUtils.randomAlphanumeric(Random().nextInt(10)+1)
                         , userInfo.secret())) { webSocket ->
             webSocket.writePing(Buffer.buffer())
             webSocket.binaryMessageHandler { _buffer ->
