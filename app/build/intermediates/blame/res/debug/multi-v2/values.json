@@ -97,6 +97,104 @@
                     }
                 }
             ]
+        },
+        {
+            "outputFile": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "map": [
+                {
+                    "source": "/home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "9",
+                        "endOffsets": "283"
+                    },
+                    "to": {
+                        "startLines": "1220",
+                        "startColumns": "4",
+                        "startOffsets": "42941",
+                        "endLines": "1224",
+                        "endColumns": "9",
+                        "endOffsets": "43169"
+                    }
+                },
+                {
+                    "source": "/home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/res/values/arrays.xml",
+                    "from": {
+                        "startLines": "2,7",
+                        "startColumns": "1,1",
+                        "startOffsets": "52,204",
+                        "endLines": "5,10",
+                        "endColumns": "16,16",
+                        "endOffsets": "200,319"
+                    },
+                    "to": {
+                        "startLines": "2,6",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,208",
+                        "endLines": "5,9",
+                        "endColumns": "16,16",
+                        "endOffsets": "203,323"
+                    }
+                },
+                {
+                    "source": "/home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "25,26,27,28,23,24,20,21,22,19,3,17,16,15,14,8,35,36,38,37,30,6,31,32,5,9,12,10,11,33",
+                        "startColumns": "1,1,1,1,1,1,1,1,1,1,4,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1",
+                        "startOffsets": "851,903,1015,1058,756,806,612,650,697,575,56,531,488,443,400,191,1387,1450,1575,1514,1193,143,1232,1271,107,230,356,270,311,1322",
+                        "endColumns": "51,111,42,132,49,44,37,46,58,36,48,41,42,44,42,38,62,63,53,60,38,45,38,50,35,39,42,40,44,62",
+                        "endOffsets": "901,1013,1056,1189,804,849,648,695,754,610,100,571,529,486,441,228,1448,1512,1627,1573,1230,187,1269,1320,141,268,397,309,354,1383"
+                    },
+                    "to": {
+                        "startLines": "1161,1162,1163,1164,1165,1166,1167,1168,1169,1170,1171,1172,1173,1174,1175,1176,1177,1178,1179,1180,1210,1211,1212,1213,1214,1215,1216,1217,1218,1219",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "40779,40834,40949,40995,41131,41184,41232,41273,41323,41385,41425,41474,41519,41565,41613,41659,41701,41767,41834,41891,42468,42510,42559,42601,42655,42694,42737,42783,42827,42875",
+                        "endColumns": "54,114,45,135,52,47,40,49,61,39,48,44,45,47,45,41,65,66,56,63,41,48,41,53,38,42,45,43,47,65",
+                        "endOffsets": "40829,40944,40990,41126,41179,41227,41268,41318,41380,41420,41469,41514,41560,41608,41654,41696,41762,41829,41886,41950,42505,42554,42596,42650,42689,42732,42778,42822,42870,42936"
+                    }
+                },
+                {
+                    "source": "/home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/res/values/pdnsd.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "1",
+                        "startOffsets": "52",
+                        "endLines": "30",
+                        "endColumns": "10",
+                        "endOffsets": "560"
+                    },
+                    "to": {
+                        "startLines": "1181",
+                        "startColumns": "4",
+                        "startOffsets": "41955",
+                        "endLines": "1209",
+                        "endColumns": "10",
+                        "endOffsets": "42463"
+                    }
+                },
+                {
+                    "source": "/home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/res/values/simpleroute.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "1152",
+                        "endColumns": "19",
+                        "endOffsets": "40501"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "328",
+                        "endLines": "1160",
+                        "endColumns": "19",
+                        "endOffsets": "40774"
+                    }
+                }
+            ]
         }
     ]
 }

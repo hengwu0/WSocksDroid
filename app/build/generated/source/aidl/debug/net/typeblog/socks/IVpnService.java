@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: /home/wooyme/Projects/SocksDroid/app/src/main/aidl/net/typeblog/socks/IVpnService.aidl
+ * Original file: /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/aidl/net/typeblog/socks/IVpnService.aidl
  */
 package net.typeblog.socks;
 public interface IVpnService extends android.os.IInterface

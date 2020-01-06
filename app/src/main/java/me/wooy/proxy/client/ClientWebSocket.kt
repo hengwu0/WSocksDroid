@@ -260,7 +260,7 @@ class ClientWebSocket : AbstractVerticle() {
         return buffer
     }
 
-    fun wsReceivedDNSHandler(data: DnsQuery){
+    private fun wsReceivedDNSHandler(data: DnsQuery){
         val (sock,buffer) = dnsQueryMap.remove(data.uuid)?:return
         val id = buffer.getShort(2)
         val buf = response(id,data.host,buffer.getBuffer(14,buffer.length()))
