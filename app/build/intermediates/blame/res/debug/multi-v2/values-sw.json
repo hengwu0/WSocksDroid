@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw/values-sw.xml",
+            "map": [
+                {
+                    "source": "/home/wooyme/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/1d4895ded098f1c8cc87a6ac2a1273ce/res/values-sw/values-sw.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

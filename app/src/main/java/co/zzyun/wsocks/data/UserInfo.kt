@@ -5,11 +5,8 @@ import org.apache.commons.codec.digest.DigestUtils
 
 class UserInfo(val username:String,val password:String,val maxLoginDevices:Int=-1,val limitation:Long = -1L){
   val key:ByteArray
-  val secret by lazy {
-    DigestUtils.md5Hex("1"+this.username+this.password)
-  }
   init {
-    val array = password.toByteArray()
+    val array = username.toByteArray()
     key = if (16 > array.size)
       array + ByteArray(16 - array.size) { 0x06 }
     else

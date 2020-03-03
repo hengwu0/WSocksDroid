@@ -1,42 +1,214 @@
 [
     {
-        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_launcher.png.flat",
-        "source": "/home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/res/drawable-xxhdpi/ic_launcher.png"
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "/home/wooyme/Projects/SocksDroid/app/build/intermediates/res/merged/debug/layout_main.xml.flat",
-        "source": "/home/wooyme/Projects/SocksDroid/app/src/main/res/layout/main.xml"
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/layout_action_switch.xml.flat",
-        "source": "/home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/res/layout/action_switch.xml"
-    },
-    {
-        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/menu_main.xml.flat",
-        "source": "/home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/res/menu/main.xml"
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png"
     },
     {
         "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/xml_settings.xml.flat",
         "source": "/home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/res/xml/settings.xml"
     },
     {
-        "merged": "/home/wooyme/Projects/SocksDroid/app/build/intermediates/res/merged/debug/layout_action_switch.xml.flat",
-        "source": "/home/wooyme/Projects/SocksDroid/app/src/main/res/layout/action_switch.xml"
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "/home/wooyme/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/1d4895ded098f1c8cc87a6ac2a1273ce/res/drawable-hdpi-v4/notification_bg_low_pressed.9.png"
     },
     {
-        "merged": "/home/wooyme/Projects/SocksDroid/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_launcher.png.flat",
-        "source": "/home/wooyme/Projects/SocksDroid/app/src/main/res/drawable-xxhdpi/ic_launcher.png"
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "/home/wooyme/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/1d4895ded098f1c8cc87a6ac2a1273ce/res/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "/home/wooyme/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/1d4895ded098f1c8cc87a6ac2a1273ce/res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png"
     },
     {
         "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/layout_main.xml.flat",
         "source": "/home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/res/layout/main.xml"
     },
     {
-        "merged": "/home/wooyme/Projects/SocksDroid/app/build/intermediates/res/merged/debug/menu_main.xml.flat",
-        "source": "/home/wooyme/Projects/SocksDroid/app/src/main/res/menu/main.xml"
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/layout_notification_template_part_time.xml.flat",
+        "source": "/home/wooyme/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/1d4895ded098f1c8cc87a6ac2a1273ce/res/layout/notification_template_part_time.xml"
     },
     {
-        "merged": "/home/wooyme/Projects/SocksDroid/app/build/intermediates/res/merged/debug/xml_settings.xml.flat",
-        "source": "/home/wooyme/Projects/SocksDroid/app/src/main/res/xml/settings.xml"
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "/home/wooyme/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/1d4895ded098f1c8cc87a6ac2a1273ce/res/drawable-hdpi-v4/notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "/home/wooyme/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/1d4895ded098f1c8cc87a6ac2a1273ce/res/drawable-xhdpi-v4/notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_launcher1.png.flat",
+        "source": "/home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/res/drawable-xxhdpi/ic_launcher1.png"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/layout-v21_notification_action.xml.flat",
+        "source": "/home/wooyme/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/1d4895ded098f1c8cc87a6ac2a1273ce/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/layout_action_switch.xml.flat",
+        "source": "/home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/res/layout/action_switch.xml"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "/home/wooyme/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/1d4895ded098f1c8cc87a6ac2a1273ce/res/drawable-mdpi-v4/notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/layout-v21_notification_template_icon_group.xml.flat",
+        "source": "/home/wooyme/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/1d4895ded098f1c8cc87a6ac2a1273ce/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "/home/wooyme/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/1d4895ded098f1c8cc87a6ac2a1273ce/res/drawable-hdpi-v4/notification_bg_normal.9.png"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "/home/wooyme/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/1d4895ded098f1c8cc87a6ac2a1273ce/res/drawable-xhdpi-v4/notification_bg_normal.9.png"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "/home/wooyme/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/1d4895ded098f1c8cc87a6ac2a1273ce/res/drawable-mdpi-v4/notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/drawable_notification_bg_low.xml.flat",
+        "source": "/home/wooyme/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/1d4895ded098f1c8cc87a6ac2a1273ce/res/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/layout-v21_notification_template_custom_big.xml.flat",
+        "source": "/home/wooyme/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/1d4895ded098f1c8cc87a6ac2a1273ce/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "/home/wooyme/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/1d4895ded098f1c8cc87a6ac2a1273ce/res/drawable-hdpi-v4/notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_frontground.png.flat",
+        "source": "/home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/res/mipmap-xxhdpi/ic_launcher_frontground.png"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "/home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "/home/wooyme/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/1d4895ded098f1c8cc87a6ac2a1273ce/res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_frontground.png.flat",
+        "source": "/home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/res/mipmap-xxxhdpi/ic_launcher_frontground.png"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "/home/wooyme/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/1d4895ded098f1c8cc87a6ac2a1273ce/res/drawable-mdpi-v4/notification_bg_normal.9.png"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/drawable_notification_bg.xml.flat",
+        "source": "/home/wooyme/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/1d4895ded098f1c8cc87a6ac2a1273ce/res/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_frontground.png.flat",
+        "source": "/home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/res/mipmap-hdpi/ic_launcher_frontground.png"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/layout_notification_template_part_chronometer.xml.flat",
+        "source": "/home/wooyme/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/1d4895ded098f1c8cc87a6ac2a1273ce/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/drawable-v21_notification_action_background.xml.flat",
+        "source": "/home/wooyme/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/1d4895ded098f1c8cc87a6ac2a1273ce/res/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_frontground.png.flat",
+        "source": "/home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/res/mipmap-mdpi/ic_launcher_frontground.png"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "/home/wooyme/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/1d4895ded098f1c8cc87a6ac2a1273ce/res/drawable-mdpi-v4/notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_frontground.png.flat",
+        "source": "/home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/res/mipmap-xhdpi/ic_launcher_frontground.png"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/menu_main.xml.flat",
+        "source": "/home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/res/menu/main.xml"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/drawable_notification_icon_background.xml.flat",
+        "source": "/home/wooyme/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/1d4895ded098f1c8cc87a6ac2a1273ce/res/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/drawable_notification_tile_bg.xml.flat",
+        "source": "/home/wooyme/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/1d4895ded098f1c8cc87a6ac2a1273ce/res/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/layout-v21_notification_action_tombstone.xml.flat",
+        "source": "/home/wooyme/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/1d4895ded098f1c8cc87a6ac2a1273ce/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "/home/wooyme/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/1d4895ded098f1c8cc87a6ac2a1273ce/res/drawable-mdpi-v4/notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "/home/wooyme/Projects/Wsocks/SocksDroid/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "/home/wooyme/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/1d4895ded098f1c8cc87a6ac2a1273ce/res/drawable-hdpi-v4/notify_panel_notification_icon_bg.png"
     }
 ]

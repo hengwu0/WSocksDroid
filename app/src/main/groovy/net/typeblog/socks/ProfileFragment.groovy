@@ -317,7 +317,7 @@ public class ProfileFragment extends PreferenceFragment {
 	
 	private void updateState() {
 		if (mBinder == null) {
-			mRunning = false;
+			mRunning = false
 		} else {
 			try {
 				mRunning = mBinder.isRunning()

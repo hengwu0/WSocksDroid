@@ -12,7 +12,6 @@ import android.os.IBinder
 import android.os.ParcelFileDescriptor
 import android.text.TextUtils
 import android.util.Log
-import me.wooy.proxy.Launcher
 import net.typeblog.socks.util.Routes
 import net.typeblog.socks.util.Utility
 
@@ -41,12 +40,6 @@ public class SocksVpnService extends VpnService {
         }
 
         final String name = intent.getStringExtra(INTENT_NAME)
-        final String server = intent.getStringExtra(INTENT_SERVER)
-        final int port = intent.getIntExtra(INTENT_PORT, 1080)
-        final String username = intent.getStringExtra(INTENT_USERNAME)
-        final String passwd = intent.getStringExtra(INTENT_PASSWORD)
-        final boolean doZip = intent.getBooleanExtra(INTENT_DOZIP,false)
-        final int offset = intent.getIntExtra(INTENT_OFFSET,0)
         final String route = intent.getStringExtra(INTENT_ROUTE)
         final String dns = intent.getStringExtra(INTENT_DNS)
         final int dnsPort = intent.getIntExtra(INTENT_DNS_PORT, 53)
@@ -65,7 +58,7 @@ public class SocksVpnService extends VpnService {
             service.createNotificationChannel(chan)
             channelId = "wsocks_service"
         }
-        startForeground(R.drawable.ic_launcher,
+        startForeground(R.mipmap.ic_launcher,
                 new Notification.Builder(this, channelId).with {
                     contentTitle = getString(R.string.notify_title)
                     contentText = String.format(getString(R.string.notify_msg), name)
@@ -81,7 +74,7 @@ public class SocksVpnService extends VpnService {
             Log.d(TAG, "fd: ${mInterface.fd}")
 
         if (mInterface) {
-            Launcher.start(server, port, username, passwd,offset,doZip)
+//            Launcher.start(server, port, username, passwd,offset,doZip)
             start(mInterface.getFd(), dns, dnsPort)
         }
         START_STICKY
@@ -110,9 +103,9 @@ public class SocksVpnService extends VpnService {
 
     @Override
     public void onDestroy() {
-        super.onDestroy();
+        super.onDestroy()
 
-        stopMe();
+        stopMe()
     }
 
     private void stopMe() {
@@ -151,24 +144,13 @@ public class SocksVpnService extends VpnService {
             // Actual DNS requests will be redirected through pdnsd.
             addRoute "8.8.8.8", 32
         }
+        try {
+            b.addDisallowedApplication("net.typeblog.socks")
+        } catch (Exception e) {
 
-        // Do app routing
-        if (!perApp) {
-            // Just bypass myself
-            try {
-                b.addDisallowedApplication("net.typeblog.socks");
-            } catch (Exception e) {
-
-            }
-        } else {
+        }
+        if(perApp) {
             if (bypass) {
-                // First, bypass myself
-                try {
-                    b.addDisallowedApplication("net.typeblog.socks");
-                } catch (Exception e) {
-
-                }
-
                 apps.each { p ->
                     if (TextUtils.isEmpty(p))
                         return
@@ -193,7 +175,6 @@ public class SocksVpnService extends VpnService {
                 }
             }
         }
-
         mInterface = b.establish()
     }
 

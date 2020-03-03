@@ -11,6 +11,9 @@
 //=====================================================================
 package co.zzyun.wsocks.client.core;
 
+import io.vertx.core.buffer.Buffer;
+import io.vertx.core.eventbus.EventBus;
+
 import java.util.ArrayList;
 
 public abstract class KCP {
@@ -155,7 +158,7 @@ public abstract class KCP {
             return offset - offset_;
         }
     }
-
+    EventBus eventBus;
     long conv = 0;
     //long user = user;
     long snd_una = 0;
@@ -200,8 +203,10 @@ public abstract class KCP {
     //long output = NULL;
     //long writelog = NULL;
 
-    public KCP(long conv_) {
-        conv = conv_;
+    public KCP(long conv_,EventBus eventBus) {
+
+      conv = conv_;
+      this.eventBus = eventBus;
     }
 
     //---------------------------------------------------------------------
@@ -483,7 +488,9 @@ public abstract class KCP {
             slice(nrcv_buf, count, nrcv_buf.size());
         }
     }
-
+    public void InputAsync(Buffer buf){
+      eventBus.send("unit-1",buf);
+    }
     // when you received a low level packet (eg. UDP packet), call it
     //---------------------------------------------------------------------
     // input data

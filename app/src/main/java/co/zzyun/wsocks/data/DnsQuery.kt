@@ -5,12 +5,11 @@ import io.vertx.core.json.JsonObject
 import java.io.DataInputStream
 import java.nio.ByteBuffer
 
-class DnsQuery(key:ByteArray,buffer: ByteArray) {
-  constructor(key:ByteArray,buffer:Buffer) : this(key,buffer.bytes)
+class DnsQuery(key:ByteArray,buffer: Buffer) {
   val host:String
   val uuid:String
   init {
-    val json = JsonObject(String(Aes.decrypt(buffer.sliceArray(Int.SIZE_BYTES..buffer.size),key,true)))
+    val json = JsonObject(String(Aes.decrypt(buffer.getBytes(Int.SIZE_BYTES,buffer.length()),key,true)))
     host = json.getString("host")
     uuid = json.getString("uuid")
   }

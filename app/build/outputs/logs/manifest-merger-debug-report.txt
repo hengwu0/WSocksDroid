@@ -1,23 +1,26 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:2:1-41:12
-INJECTED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:2:1-41:12
-INJECTED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:2:1-41:12
-INJECTED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:2:1-41:12
-INJECTED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:2:1-41:12
-INJECTED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:2:1-41:12
-INJECTED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:2:1-41:12
+ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:2:1-42:12
+MERGED from [com.android.support:support-compat:28.0.0] /home/wooyme/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/1d4895ded098f1c8cc87a6ac2a1273ce/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/wooyme/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/a2adad106e6830865f504aab7e9bc4e2/AndroidManifest.xml:17:1-25:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/wooyme/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/1e519dcbc2ab203f7b3a8b52362fbb79/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:2:1-42:12
 	package
 		ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:3:5-33
 		INJECTED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml
 		INJECTED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml
-		ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:2:1-41:12
+		ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:2:1-42:12
 		INJECTED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml
-		ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:2:1-41:12
+		ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:2:1-42:12
 		INJECTED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:2:11-69
@@ -34,59 +37,73 @@ ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.
 	android:name
 		ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:7:19-71
 application
-ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:9:5-39:19
+ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:9:5-40:19
+MERGED from [com.android.support:support-compat:28.0.0] /home/wooyme/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/1d4895ded098f1c8cc87a6ac2a1273ce/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /home/wooyme/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/1d4895ded098f1c8cc87a6ac2a1273ce/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/wooyme/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/a2adad106e6830865f504aab7e9bc4e2/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/wooyme/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/a2adad106e6830865f504aab7e9bc4e2/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /home/wooyme/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/1d4895ded098f1c8cc87a6ac2a1273ce/AndroidManifest.xml:22:18-91
 	android:label
 		ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:12:9-41
 	android:icon
-		ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:11:9-45
+		ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:11:9-43
 	android:allowBackup
 		ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:13:9-40
+		ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:14:9-40
+	android:usesCleartextTraffic
+		ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:13:3-38
 activity#net.typeblog.socks.MainActivity
-ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:14:9-22:20
-	android:label
-		ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:16:13-45
+ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:15:9-23:20
+	android:theme
+		ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:17:13-77
 	android:name
-		ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:15:13-41
+		ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:16:13-41
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:17:13-21:29
+ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:18:13-22:29
 action#android.intent.action.MAIN
-ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:18:17-69
+ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:19:17-69
 	android:name
-		ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:18:25-66
+		ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:19:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:20:17-77
+ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:21:17-77
 	android:name
-		ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:20:27-74
+		ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:21:27-74
 service#net.typeblog.socks.SocksVpnService
-ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:24:3-31:13
+ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:25:3-32:13
 	android:process
-		ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:27:4-26
+		ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:28:4-26
 	android:permission
-		ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:26:4-60
+		ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:27:4-60
 	android:name
-		ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:25:4-35
+		ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:26:4-35
 intent-filter#android.net.VpnService
-ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:28:4-30:20
+ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:29:4-31:20
 action#android.net.VpnService
-ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:29:5-52
+ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:30:5-52
 	android:name
-		ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:29:13-50
+		ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:30:13-50
 receiver#net.typeblog.socks.BootReceiver
-ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:33:3-38:14
+ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:34:3-39:14
 	android:name
-		ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:34:4-32
+		ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:35:4-32
 intent-filter#android.intent.action.BOOT_COMPLETED
-ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:35:4-37:20
+ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:36:4-38:20
 action#android.intent.action.BOOT_COMPLETED
-ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:36:5-66
+ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:37:5-66
 	android:name
-		ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:36:13-64
+		ADDED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml:37:13-64
 uses-sdk
 INJECTED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml
 INJECTED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:support-compat:28.0.0] /home/wooyme/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/1d4895ded098f1c8cc87a6ac2a1273ce/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /home/wooyme/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/1d4895ded098f1c8cc87a6ac2a1273ce/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/wooyme/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/a2adad106e6830865f504aab7e9bc4e2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/wooyme/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/a2adad106e6830865f504aab7e9bc4e2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/wooyme/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/1e519dcbc2ab203f7b3a8b52362fbb79/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/wooyme/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/1e519dcbc2ab203f7b3a8b52362fbb79/AndroidManifest.xml:20:5-44
 INJECTED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml
 INJECTED from /home/wooyme/Projects/Wsocks/SocksDroid/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion

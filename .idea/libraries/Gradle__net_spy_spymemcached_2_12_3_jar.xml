@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: net.spy:spymemcached:2.12.3@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.spy/spymemcached/2.12.3/9a648a4897f8038dc146d445b6fe94dacbb7e132/spymemcached-2.12.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.spy/spymemcached/2.12.3/1e7149fe419cddd172c40d7bfa1174d9a7ca5cc4/spymemcached-2.12.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

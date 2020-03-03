@@ -40,6 +40,8 @@ android {
 dependencies {
 	compile fileTree(dir: 'libs', include: ['*.jar'])
 	compile 'org.codehaus.groovy:groovy:2.4.12:grooid'
+	compile 'com.squareup.okhttp:okhttp:2.5.0'
+	compile 'net.spy:spymemcached:2.12.3'
 	compile 'io.vertx:vertx-core:3.6.0'
     compile group: 'io.vertx', name: 'vertx-web', version: '3.6.0'
     compile "io.vertx:vertx-lang-kotlin:3.6.0"
@@ -50,6 +52,6 @@ dependencies {
     compile "io.netty:netty-transport-native-epoll:4.1.33.Final"
 	compile "org.apache.commons:commons-text:1.6"
     compile group: 'io.netty', name: 'netty-transport-native-kqueue', version: '4.1.33.Final'
-//    compile group: 'io.netty', name: 'netty-all', version: '4.1.33.Final'
+	implementation "com.android.support:support-compat:28.0.0"
 }
 
